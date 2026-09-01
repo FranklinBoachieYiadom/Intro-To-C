@@ -2,11 +2,10 @@
 #include <stdlib.h>
 
 int main (){
-    // setvbuf(stdout, NULL, _IONBF, 0);23
+    // setvbuf(stdout, NULL, _IONBF, 0)   This is a kinda small hack for I/O       
 
-   /*
-   Declaring all the data types studied today.
-   */
+   //Declaring all the data types studied today.
+   
     char ch;
     int num;
     double d;
@@ -36,7 +35,7 @@ int main (){
     printf("Please input a floating point number: ");
     scanf ("%f", &f);
     printf("The value of the float is %g\n", f);
-    
+
     //To display the value of our booleans
     printf("The value of True is any number aside 0, that is: %i\n", yes);
     printf("The value of False is the number \'o\', that is: %i\n", no);
