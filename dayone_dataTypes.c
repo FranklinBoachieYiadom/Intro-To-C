@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 int main (){
-    // setvbuf(stdout, NULL, _IONBF, 0)   This is a kinda small hack for I/O       
+    // setvbuf(stdout, NULL, _IONBF, 0)   This is a kinda small hack for I/O for older systems, not important now      
 
    //Declaring all the data types studied today.
-   
     char ch;
+    char name[10];    //Note that we assigned the length of the expected strings, we cannot use space in strings
     int num;
     double d;
     float f;
@@ -20,6 +20,11 @@ int main (){
     printf("Please input your character: ");
     scanf("%c", &ch);
     printf("The character you typed is %c\n",ch); 
+
+    //Strings in c is quite different
+    printf("Please input your name: ");   
+    scanf("%s", name);    //Note that here the input variable didn't have an & before the variable, and the initiator variable is %s, though it was declared with char
+    printf("The name you typed is %s\n",name); 
 
     // For integers:
     printf("Input an integer: ");
@@ -38,7 +43,7 @@ int main (){
 
     //To display the value of our booleans
     printf("The value of True is any number aside 0, that is: %i\n", yes);
-    printf("The value of False is the number \'o\', that is: %i\n", no);
+    printf("The value of False is the number \'0\', that is: %i\n", no);
 
     return 0;
 }
