@@ -5,7 +5,7 @@ int main (){
     // setvbuf(stdout, NULL, _IONBF, 0)   This is a kinda small hack for I/O for older systems, not important now      
 
    //Declaring all the data types studied today.
-    char ch;
+    char ch;         // Note that when you are assigning a value for char, we use single quotes ''.
     char name[10];    //Note that we assigned the length of the expected strings, we cannot use space in strings
     int num;
     double d;
@@ -17,7 +17,7 @@ int main (){
     //Note that, \n takes us to a new line, and also when assigning a character, use single quotes ''
     
     //For Single characters:
-    printf("Please input your character: ");
+    printf("Please input a single character: ");
     scanf("%c", &ch);
     printf("The character you typed is %c\n",ch); 
 
