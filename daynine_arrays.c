@@ -9,12 +9,7 @@ int main()
    int i,j;
 
     for (i = 0; i < 20; i++){
-        if (i==0){
-            even_nums[i] = i;
-        }
-        else{
-            even_nums[i] = even_nums[i-1] + 2;
-        }
+        even_nums[i] = i * 2;
     }
 
     for(j= 0; j< 20; j++){
@@ -28,11 +23,11 @@ int main()
     int n = 6;
     char arr[n];
 
-    int initializer;
+    int klizer;
 
-    for (initializer= 0; initializer < n; initializer++){
-        printf("\nEnter your character[%i]:",initializer+1);
-        scanf("\n%c", &arr[initializer]);
+    for (klizer= 0; klizer < n; klizer++){
+        printf("\nEnter your character[%i]:",klizer+1);
+        scanf("\n%c", &arr[klizer]);
     }
 
     int user_input;
@@ -41,6 +36,32 @@ int main()
 
     int index= user_input-1;
     printf("\nThe value in %i is %c\n", user_input , arr[index]);
+
+
+    
+//This is a two dimensional array
+
+    int row = 3;
+    int col = 4;
+    int array[row][col];
+
+    int starter = 100;
+
+    int p, k;
+    
+    for (p= 0; p < row; p++){
+        for(k = 0; k < col; k++){
+            array[p][k] = starter;
+            starter++;
+        }
+    }
+//Here we want to show the values that have been stored in the array
+    for (p=0; p < row; p++){
+        for(k =  0; k < col; k++){
+            printf("%5i ", array[p][k]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
