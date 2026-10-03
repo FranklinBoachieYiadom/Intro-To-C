@@ -29,7 +29,7 @@ int main()
     round.radius = 4;
     round.center = cent;
 
-    return 0;
+ return 0;
 }
 
 // Create a new BankCustomer structure type, which keeps track of customer ID,
